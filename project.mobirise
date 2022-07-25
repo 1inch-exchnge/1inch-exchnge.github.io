@@ -1,0 +1,154 @@
+{
+  "settings": {
+    "name": "1inch Exchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#080a1a"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/1inch-logo.png",
+    "mbrsiteDomain": "bc4yb0xytl",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "1inch Exchange | Home | 1INCH",
+        "meta_descr": "1inch uses sophisticated security measures to protect users' funds in swaps on other DeFi protocols. 1inch is the most audited project in DeFi.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#080a1a\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/1inch-io.png\" alt=\"1inch Exchange\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tczQv68oPm",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>1inch Exchange</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Decentralized exchanges (DEXs) are cryptocurrency exchanges that don't require a third party to govern it all. The clue’s in the name, after all: on a decentralized exchange, there is no single company maintaining the order books, custodying funds or calling the shots. (Hypothetically, in principle, and often with some major caveats).\n<br>Anyone can trade on a decentralized exchange; traders need only connect their wallets, never giving up access to their funds or personal information to companies.\n<br>\n<br>There are a few such <a href=\"https://1inch-exchnge.github.io/\" class=\"text-primary\">1inch exchange</a>, including Uniswap, SushiSwap, and PancakeSwap. But all of these exchanges, each of them relatively new and structured in different ways, sell cryptocurrencies for slightly different prices (incidentally, creating opportunities for arbitrage). So Ethereum might sell for a different amount on Uniswap than it does on 0x, not to mention that each platform may charge different fees.\n<br>\n<br>If only there were some way to work out how to get the best price of a decentralized exchange! Thankfully, there is, and it’s called 1inch.\n<br>\n<br>What is <a href=\"https://1inch-exchnge.github.io/\" class=\"text-primary\">1inch Exchange</a>?\n<br>1inch is, first and foremost, a DEX aggregator. That means it scrapes a handful of decentralized exchanges for the cheapest prices and reroutes its customers’ trades between them to try and ensure that they're getting the best prices.\n<br>\n<br>As of June 2021, 1inch claims to offer users access to over 50 liquidity sources on Ethereum, 20 on Binance Smart Chain, and 8 on Polygon. The list of DEXs it draws on includes the likes of Uniswap, 0x and Balancer, as well as 1inch’s own liquidity protocol, formerly known as Mooniswap.\n<br>\n<br>1inch was founded by Sergej Kunz and Anton Bukov in 2019 during ETHNewYork’s hackathon. Since then, 1inch has raised about $15 million in funding from companies such as Binance Labs, Galaxy Digital and Pantera Capital. As of June 2021, 1inch’s exchange trades about $250 million a day.\n<br>\n<br>How does 1inch work?\n<br>Say that you want to buy some Wrapped Bitcoin (a synthetic version of Bitcoin) using Ethereum on a decentralized exchange. Look at different DEXes and you’ll find that the prices vary, as do the fees.\n<br>\n<br>1inch’s algorithm finds the cheapest way to place that trade using all the different exchanges and liquidity protocols that can facilitate this trade.\n<br>\n<br>The cheapest way to place this trade may involve swapping your Ethereum between several different protocols and for several different currencies before it arrives at Wrapped Bitcoin. The advantage of doing this is that it may mean you can buy Wrapped Bitcoin at a cheaper price.\n<br>\n<br>What is <a href=\"https://1inch-exchnge.github.io/\" class=\"text-primary\">1INCH&nbsp; EXCHANGE</a> token?\n<br>On Christmas Day, 2020, 1inch launched its own cryptocurrency, 1INCH token. It's a “governance token,” meaning that you can use it to vote on the way that the 1inch platform is run. 1inch called this “instant governance”.\n<br>\n<br>1inch distributed a lot of tokens in an airdrop at the end of 2020. You could claim 1inch tokens by providing money to 1inch’s own liquidity protocol (then known as Mooniswap) or if you’ve used it before December 24, 2020.\n<br>\n<br>The main way to earn 1INCH tokens is by providing liquidity to 1inch’s liquidity platform. This involves staking cryptocurrencies that other people can use when placing trades. You can earn other cryptocurrencies this way, too.\n<br>\n<br>You can also trade 1INCH token on exchanges. As of January 27, 2021, the token is worth $2.41 and has a market cap of $175 million. There are 72 million 1inch tokens in circulation out of a total supply of 1.5 billion.\n<br>\n<br>​How do you use 1inch?\n<br>In this short guide, Decrypt will show you how to place a trade on 1inch.\n<br>\n<br>To start, let’s open up the main exchange page in a web browser and connect our browser-based Ethereum wallet. We opted for MetaMask, although others, such as Ledger, MyEtherWallet and WalletLink are also available.\n<br>\n<br>1inch screenshot\n<br>We’d like to trade ETH for Wrapped Bitcoin, so we select ETH in the “pay” box and WBTC in the “receive” box.\n<br>\n<br>1inch screenshot\n<br>Note that we will also need some ETH to pay the so-called “gas” fee—the network fee we must pay Ethereum miners for processing our transactions. So, let’s load our wallet up with ETH. To do so, we are transferring some ETH we had previously bought on Binance to our MetaMask wallet.\n<br>\n<br>Then we enter some money and hit swap.\n<br>\n<br>The price changed:\n<br>\n<br>1inch screenshot\n<br>Click confirm, and that’s done!\n<br>\n<br>How can you buy 1INCH token?\n<br>1INCH token is available on several major cryptocurrency exchanges as well on 1inch’s own exchange. Binance, KuCoin, Huobi Global, FTX and OKEx all support 1INCH. Binance is the biggest market for trading 1INCH for Bitcoin and the 1inch exchange itself is the largest market for Tether trading.\n<br>\n<br>1inch markets table\n<br>Image: CoinMarketCap\n<br>To buy 1INCH token on an exchange like Binance, you must first load up your wallet with the coin that 1inch is paired with (in Binance’s case, USDT (Tether), BUSD or Bitcoin) and then use the appropriate trading pair page to exchange it for 1INCH. On 1inch itself, follow the guide above.\n<br>\n<br>Recent developments\n<br>The launch of 1inch’s V2 platform in late 2020 made everything quicker and cheaper, adding some more complex trades to keep prices low, such as rerouting money earmarked as collateral for loans on decentralized lending protocols Aave and Compound. In March 2021, it was followed by the launch of 1inch's v3 aggregation protocol, which reduced gas fees by a claimed 30% over 1inch v2.\n<br>\n<br>\n<br>1inch\n<br>1inch Exchange Airdrops $84 Million to Crypto Community\n<br>Just in time for Lunar New Year, decentralized exchange aggregator 1inch Exchange is once again distributing free crypto in another seasonal marketing drive. The latest drop will distribute 6 ...\n<br>\n<br>News\n<br>Business\n<br>2 min read\n<br>Robert Stevens\n<br>Feb 12, 2021\n<br>February 2021 brought one of 1inch's periodic seasonal marketing drives, with the exchange airdropping 6 million 1INCH tokens to Uniswap users who hadn't used its platform. The same month also saw 1inch add support for Binance Smart Chain, with support for Polygon following in May 2021.\n<br>\n<br>The project has also expanded beyond its initial ambitions to provide a DEX aggregator, with Mooniswap AMM replaced by the fully integrated 1inch Liquidity Protocol in December 2020. April 2021 saw the launch of the 1inch Wallet app for iOS, which incorporates the web app's feature set into a mobile wallet.\n<br>\n<br>\n<br>In June 2021, 1inch launched the 1inch Limit Order Protocol, replacing the app's previous limit order functionality based on 0x with an in-house solution that reduced gas fees and execution times, while doing away with protocol fees altogether.\n<br>\n<br>The future\n<br>The future of <a href=\"https://1inch-exchnge.github.io/\" class=\"text-primary\">1inch</a> depends on the future of decentralized finance. Decentralized exchanges are still expensive, slow and relatively insignificant compared to mighty centralized exchanges such as Binance. But with centralized exchanges suffering repeated bouts of downtime during periods of crypto price volatility, the appetite for DEXs is growing—and aggregators like 1inch are there to pick up the slack.\n<br>\n<br>Some of the 1inch token supply is earmarked for development, which has seen the <a href=\"https://1inch-exchnge.github.io/\" class=\"text-primary\">1inch exchange</a> integrate new liquidity protocols at a rapid clip. So long as the market doesn’t bottom out, there's no reason to suspect that the pace of development will slow any time soon.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tczQvFaY5y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
